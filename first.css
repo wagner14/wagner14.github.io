@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+* {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    padding: 14px;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    min-width: 375px;
+    max-width: 415px;
+    border: 1px solid black;
+    padding: 14px;
+    margin: 0 auto;
+}
+.first {
+   border: 1px solid white;
+}
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+.first h3 {
+    color: hsl(71, 73%, 54%);
+}
+.first p {
+    opacity: 0.8;
+}
+.second {
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    display: block;
+}
+.second h3, p {
+    margin: 5%;
+}
+.second p.money {
+    display: inline;
+    font-size: 48px;
+}
+sup {
+    color: hsl(204, 43%, 93%);
+}
+button {
+    display: flex;
+    width: 80%;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(71, 73%, 54%);
+    margin: 0 auto;
+    border-radius: 12px;
+    color:white;
+    font-weight: 800;
+
+}
+.third {
+    background-color: hsl(179, 62%, 40%);
+    border: 1px solid hsl(179, 62%, 50%);
+    color: white;
+    padding: 14px;
+    
+}
+@media (min-width: 500px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        min-width: 500px;
+        padding: 14px;
+        border: none;
+        margin: 0 auto;
+    }
+    .first {
+       border: 1px solid white;
+    }
+    h2 {
+        color: hsl(179, 62%, 43%);
+    }
+    .first h3 {
+        color: hsl(71, 73%, 54%);
+    }
+    .first p {
+        opacity: 0.8;
+    }
+    .second {
+        background-color: hsl(179, 62%, 43%);
+        color: white;
+        display: inline-block;
+    }
+    .second h3, p {
+        margin: 5%;
+    }
+    .second p.money {
+        display: inline;
+        font-size: 48px;
+    }
+    sup {
+        color: hsl(204, 43%, 93%);
+    }
+    button {
+        display: flex;
+        width: 80%;
+        padding: 12px;
+        align-items: center;
+        justify-content: center;
+        background-color: hsl(71, 73%, 54%);
+        margin: 0 auto;
+        border-radius: 12px;
+        color:white;
+        font-weight: 800;
+    } 
+    .third {
+        background-color: hsl(179, 62%, 40%);
+        border: 1px solid hsl(179, 62%, 50%);
+        color: white;
+        padding: 14px;
+
+        display: inline-block;
+}
+}
