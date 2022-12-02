@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg-mobile.svg');
+    background-color: var(--violet);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+}
+
+#logo {
+    margin: 5%;
+}
+
+#imagem img {
+    margin: 7% auto;
+    display: block;
+    width: 75%;
+}
+
+#content {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.25px;
+}
+
+#content h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+#ind {
+    text-indent: 4%;
+}
+
+#content p {
+    white-space: nowrap;
+}
+
+.parag1 {
+    margin-top: 10%;
+}
+
+.parag2 {
+    text-indent: -5px;
+}
+
+.parag3 {
+    text-indent: -12px;
+}
+
+.parag4 {
+    text-align: center;
+}
+
+.parag5 {
+    text-align: center;
+}
+
+#content .botao {
+    display: block;
+    margin: 10% auto;
+    width: 75%;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    color: var(--violet);
+    border: none;
+}
+
+footer {
+    margin: 0% auto;
+    display: flex;
+    justify-content: center;
+    gap: 6%;
+}
+
+@media screen and (min-width: 650px)  {
+ 
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('bg-desktop.svg');
+        background-color: var(--violet);
+        background-repeat: no-repeat;
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+    }
+    main {
+        display: grid;
+        grid-template-columns: 60% 25%;
+        column-gap: 1%;
+        align-content: center;
+    }
+
+    #ind {
+        text-indent: 0%;
+    }
+    
+    #content h2 {
+        display: flex;
+        justify-content: flex-start;
+        font-size: 25px;
+        line-height: 1.25px;
+        margin: 0%;
+
+    }
+
+    #content .parag1 {
+        margin-top: 8%;
+    }
+    
+    #content p {
+        text-indent: 0%;
+        text-align: justify;
+        line-height: 1.25px;
+        margin: 0px;
+        padding: 0px;
+       
+    }
+
+    #content .botao {
+    margin-top: 10%;
+    margin-right: auto;
+    margin-bottom: 10%;
+    margin-left: 0%;
+    width: 60%;
+    border-radius:20px;
+    padding:10px;
+    color:var(--violet);
+    border:none;
+    }
+
+    footer {
+        display: flex;
+        gap: 1%;
+        justify-content: flex-end;
+        align-content: flex-end;
+        margin: 3%;
+    }
+
+}
